@@ -1,0 +1,60 @@
+.confirmation {
+    padding: 0 !important;
+}
+
+.remaining-time {
+    background-image: linear-gradient(rgba(3, 3, 3, 0.6), rgba(3, 3, 3, 0.6)), url("../../../assets/images/restaurant-chef.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: calc(var(--spacing) * 12);
+}
+
+.remaining-time p {
+    color: var(--color-secondary-2);
+    font-size: 18px;
+    font-family: karla-bd;
+}
+
+.form-textarea {
+    width: 100%;
+    font-size: 18px;
+    font-family: karla-med;
+    border: 1px solid var(--color-highlight-2);
+    border-radius: 8px;
+    /* margin-top: calc(var(--spacing) * 3); */
+    padding: calc(var(--spacing) * 3) calc(var(--spacing) * 2);
+    caret-color: var(--color-secondary-1);
+}
+
+.form-textarea::placeholder {
+    color: rgba(3, 3, 3, 0.2);
+}
+
+.form-textarea:focus {
+    outline: 1px solid var(--color-secondary-2);
+    border: 1px solid var(--color-secondary-1);
+}
+
+.form-textarea:focus::placeholder {
+    color: var(--color-highlight-2);
+}
+
+/* ============================= FORM ============================= */
+.customer-details-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: calc(var(--spacing) * 5);
+}
+
+@media (width < 48rem) {
+    .customer-details-form {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--spacing) * 5);
+    }
+}

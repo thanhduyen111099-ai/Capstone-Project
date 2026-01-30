@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* fonts */
+@font-face {
+    font-family: markazi-med;
+    src: url("./assets/fonts/MarkaziText-Medium.ttf");
+}
+@font-face {
+    font-family: markazi-reg;
+    src: url("./assets/fonts/MarkaziText-Regular.ttf");
+}
+@font-face {
+    font-family: karla-xb;
+    src: url("./assets/fonts/Karla-ExtraBold.ttf");
+}
+@font-face {
+    font-family: karla-bd;
+    src: url("./assets/fonts/Karla-Bold.ttf");
+}
+@font-face {
+    font-family: karla-med;
+    src: url("./assets/fonts/Karla-Medium.ttf");
+}
+@font-face {
+    font-family: karla-reg;
+    src: url("./assets/fonts/Karla-Regular.ttf");
+}
+
+:root {
+    /* color */
+    --color-primary-1: #495e57;
+    --color-primary-2: #f4ce14;
+    --color-secondary-1: #ee9972;
+    --color-secondary-2: #fbdabb;
+    --color-highlight-1: #fff;
+    --color-highlight-2: #edefee;
+    --color-highlight-3: #333;
+    --color-icon: #48742c;
+    --color-warning: #f03030;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 7.2rem;
+}
+
+h1 {
+    font-family: markazi-med;
+    font-size: 4rem;
+    color: var(--color-highlight-3);
+}
+
+h2 {
+    font-family: markazi-reg;
+    font-size: 2.5rem;
+    color: var(--color-highlight-3);
+}
+
+p,
+span {
+    font-family: karla-reg;
+    font-size: 1rem;
+    color: var(--color-highlight-3);
+}
+
+.app-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-content {
+    flex: 1;
+    align-content: center;
+}

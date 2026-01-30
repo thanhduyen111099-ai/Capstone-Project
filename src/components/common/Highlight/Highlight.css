@@ -1,0 +1,35 @@
+.highlight {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.highlight.container {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: calc(var(--spacing) * 5);
+    margin-inline: auto;
+}
+
+.highlight-container {
+    grid-column: 1 / -1;
+}
+
+.highlight-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (width >= 80rem) {
+    .highlight-container {
+        grid-column: span 8 / span 8;
+        grid-column-start: 3;
+    }
+}
+
+@media (width < 48rem) {
+    .highlight {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

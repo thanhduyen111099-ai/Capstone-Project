@@ -1,0 +1,38 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+    faUsers,
+    faCalendar,
+    faClock,
+    faLocationDot,
+    faArrowLeft,
+    faUser,
+    faEnvelope,
+    faMobile,
+    faComment,
+    faBellConcierge,
+    faCalendarXmark,
+    faHeadSideCough,
+    faSun,
+    faCircleInfo,
+    faCakeCandles,
+    faPenToSquare,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(
+    faUsers,
+    faCalendar,
+    faClock,
+    faLocationDot,
+    faArrowLeft,
+    faUser,
+    faEnvelope,
+    faMobile,
+    faComment,
+    faBellConcierge,
+    faCalendarXmark,
+    faHeadSideCough,
+    faSun,
+    faCircleInfo,
+    faCakeCandles,
+    faPenToSquare,
+);

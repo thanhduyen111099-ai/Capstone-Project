@@ -1,0 +1,84 @@
+.cancel-reservations {
+    padding-block: calc(var(--spacing) * 12);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 12);
+}
+
+.cancel-reservations_form {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 5);
+}
+.cancel-reservations_form label {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing) * 3);
+    border: 1px solid var(--color-highlight-2);
+    border-radius: 16px;
+    padding: calc(var(--spacing) * 4);
+}
+.cancel-reservations_form span {
+    font-family: karla-med;
+}
+.cancel-reservations_form textarea {
+    border: 1px solid var(--color-secondary-1);
+    border-radius: 16px;
+    padding: calc(var(--spacing) * 4);
+}
+.cancel-reservations_form textarea:disabled {
+    border: 1px solid var(--color-highlight-2);
+}
+.cancel-reservations_form textarea:focus-visible {
+    outline: 1px solid var(--color-secondary-2);
+}
+
+.cancel-reservations_buttons {
+    display: flex;
+    gap: calc(var(--spacing) * 5);
+    justify-content: center;
+    align-items: center;
+}
+.cancel-reservations_buttons button {
+    width: 25vw;
+}
+.cancel-btn {
+    background-color: var(--color-secondary-2);
+    border-radius: 16px;
+    color: var(--color-primary-1);
+}
+.cancel-btn:hover {
+    background-color: var(--color-secondary-1);
+}
+
+/* ============================ RESPONSIVE ============================ */
+@media (width < 64rem) {
+    .cancel-reservations {
+        padding-inline: calc(var(--spacing) * 2);
+    }
+}
+
+@media (width < 48rem) {
+    .cancel-reservations {
+        padding-block: calc(var(--spacing) * 10);
+    }
+
+    .cancel-reservations_buttons button {
+        width: 40%;
+    }
+}
+
+@media (width < 40rem) {
+    .cancel-reservations_buttons {
+        padding-inline: calc(var(--spacing) * 5);
+    }
+    .cancel-reservations_buttons button {
+        width: 100%;
+    }
+}
+
+@media (width < 32rem) {
+    .cancel-reservations_buttons {
+        flex-direction: column;
+    }
+}

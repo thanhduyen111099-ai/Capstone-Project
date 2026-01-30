@@ -1,0 +1,28 @@
+.banner {
+    background-color: var(--color-primary-1);
+    padding: 2rem;
+    text-align: center;
+}
+
+.banner-heading {
+    color: var(--color-primary-2);
+    font-family: markazi-med;
+    font-size: 4rem;
+    line-height: 2.5rem;
+}
+
+.banner-content {
+    color: var(--color-highlight-1);
+    font-family: markazi-reg;
+    font-size: 2.5rem;
+}
+
+@media (width< 32rem) {
+    .banner-heading {
+        font-size: 2.5rem;
+    }
+
+    .banner-content {
+        font-size: 2rem;
+    }
+}

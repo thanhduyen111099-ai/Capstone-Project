@@ -1,0 +1,69 @@
+.review-form {
+    padding-block: calc(var(--spacing) * 12);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 8);
+    /* background-image: linear-gradient(rgba(3, 3, 3, 0.6), rgba(3, 3, 3, 0.6)), url("../../../assets/images/food_greek-salad.jpg");
+    background-position: center;
+    background-size: cover; */
+}
+
+.form-info {
+    padding-left: 0px !important;
+}
+
+.form-info span {
+    color: var(--color-primary-1);
+    padding-left: calc(var(--spacing) * 6);
+}
+
+.bell-icon {
+    font-size: 28px;
+    color: var(--color-primary-2);
+}
+
+.review_title {
+    font-size: 40px;
+    font-family: markazi-reg;
+    color: var(--color-highlight-1);
+    text-align: center;
+}
+
+.review_disc {
+    font-family: karla-med;
+    color: var(--color-highlight-1);
+    text-align: center;
+    text-wrap: pretty;
+}
+
+.btn-edit {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.btn-edit:hover {
+    text-decoration: underline;
+}
+
+@media (width < 64rem) {
+    .review-form {
+        padding-inline: calc(var(--spacing) * 2);
+    }
+}
+
+@media (width < 48rem) {
+    .form-info span {
+        display: block;
+        padding-left: 0;
+    }
+
+    .review_title {
+        font-size: 28px;
+        padding-inline: calc(var(--spacing) * 2);
+    }
+
+    .review_disc {
+        font-family: karla-reg;
+        padding-inline: calc(var(--spacing) * 2);
+    }
+}

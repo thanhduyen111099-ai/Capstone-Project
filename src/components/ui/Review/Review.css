@@ -1,0 +1,80 @@
+.rating {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.rating .star {
+    width: 1.2rem;
+}
+
+.review {
+    display: grid;
+    grid-row: span 3 / span 3;
+    grid-template-rows: subgrid;
+    background-color: var(--color-highlight-1);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.review-user {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 0.5rem;
+}
+
+.review-user_avt {
+    grid-row: 1 / -1;
+    width: 32px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 16px;
+}
+
+.review-user_name {
+    font-family: karla-bd;
+    font-size: 18px;
+}
+
+.review-user_user {
+    font-family: karla-med;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: calc(var(--spacing) * 5);
+}
+
+.reviews-grid .reviews {
+    grid-column: span 12 / span 12;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, auto);
+    row-gap: 1rem;
+    column-gap: calc(var(--spacing) * 5);
+}
+
+@media (width >= 80rem) {
+    .reviews-grid .reviews {
+        grid-column: span 8 / span 8;
+        grid-column-start: 3;
+    }
+}
+
+@media (width < 64rem) {
+    .reviews-grid .reviews {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: calc(var(--spacing) * 5);
+    }
+}
+
+@media (width < 40rem) {
+    .reviews-grid {
+        padding-inline: 1rem;
+    }
+    .reviews-grid .reviews {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

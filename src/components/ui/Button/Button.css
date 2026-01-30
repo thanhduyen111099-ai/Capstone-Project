@@ -1,0 +1,26 @@
+.btn {
+    font-family: karla-bd;
+    font-size: 1rem;
+    padding: 8px 1.5rem;
+    border: none;
+    background-color: none;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--spacing) * 2);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn.primary {
+    border-radius: 16px;
+    background-color: var(--color-primary-2);
+    color: var(--color-highlight-3);
+}
+
+.btn.primary:hover {
+    background-color: #fadd4e;
+}
