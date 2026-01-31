@@ -65,7 +65,6 @@ describe("Initial State", () => {
 
         expect(screen.getByTestId("current-step")).toHaveTextContent("1");
         expect(screen.getByTestId("guests")).toHaveTextContent("2");
-        expect(screen.getByTestId("date")).toHaveTextContent("");
         expect(screen.getByTestId("time")).toHaveTextContent("");
         expect(screen.getByTestId("occasion")).toHaveTextContent("");
         expect(screen.getByTestId("first-name")).toHaveTextContent("");

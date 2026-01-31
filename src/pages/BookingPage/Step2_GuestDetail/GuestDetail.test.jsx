@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 
 import { renderWithProviders } from "../../../test/helper";
 import GuestDetail from "./GuestDetail";
-import Step3_Review from "../Step3/Step3_Review";
+import ConfirmedBooking from "../Step3_ConfirmedBooking/ConfirmedBooking";
 
 import { useReservations } from "../../../context/ReservationsContext";
 
@@ -171,7 +171,7 @@ describe("Unit tests for the form validation and submission", () => {
             await user.click(submitButton);
 
             await waitFor(() => {
-                expect(renderWithProviders(<Step3_Review />));
+                expect(renderWithProviders(<ConfirmedBooking />));
             });
         });
 
@@ -185,7 +185,7 @@ describe("Unit tests for the form validation and submission", () => {
             await user.click(submitButton);
 
             await waitFor(() => {
-                expect(renderWithProviders(<Step3_Review />)).not;
+                expect(renderWithProviders(<ConfirmedBooking />)).not;
             });
         });
     });

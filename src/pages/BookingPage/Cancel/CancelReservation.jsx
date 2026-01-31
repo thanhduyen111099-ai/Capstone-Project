@@ -42,7 +42,7 @@ const REASONS = [
 
 export default function CancelReservation() {
     const { reservations, goToStep, resetReservations, updateReservations, isCancel } = useReservations();
-    const { partySize, date, time, tableLocation, reservationCode } = reservations;
+    const { guests, date, time, occasion, reservationCode } = reservations;
 
     // const [isSubmitting, setIsSubmitting] = useState(false);
     const [error, setError] = useState(null);
@@ -139,18 +139,16 @@ export default function CancelReservation() {
         <div className="cancel-reservations">
             <Form title={<>Reservation Code: {reservationCode}</>}>
                 <div className="flex flex-col gap-4">
-                    <Info icon={"users"} className="form-info">
-                        {partySize} Guests
+                    <Info icon={"users"} className="pt-8">
+                        {guests} Guests
                     </Info>
-                    <Info icon={"calendar"} className="form-info">
-                        {dayjs(date).format("DD/MM/YYYY")}
-                    </Info>
-                    <Info icon={"clock"} className="form-info">
-                        {time}
-                    </Info>
-                    <Info icon={"location-dot"} className="form-info">
-                        {tableLocation}
-                    </Info>
+                    <Info icon={"calendar"}>{date}</Info>
+                    <Info icon={"clock"}>{time}</Info>
+                    {occasion !== "" && (
+                        <Info icon={"cake-candles"} className="pb-8">
+                            {occasion}
+                        </Info>
+                    )}
                 </div>
             </Form>
 

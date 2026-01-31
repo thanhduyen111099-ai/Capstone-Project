@@ -9,7 +9,7 @@ export default function ReservationsProvider({ children, totalSteps = 3 }) {
 
     // REMANDING TIME ---------------------------------------------------------------------------------
 
-    const DURATION_MINUTES = 1;
+    const DURATION_MINUTES = 5;
     const startTimeRef = useRef(null);
 
     const [remaining, setRemaining] = useState({
