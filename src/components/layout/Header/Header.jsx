@@ -52,7 +52,7 @@ const Header = () => {
                             <Link key={e.item} to={e.path} className="header_link">
                                 {e.item}
                             </Link>
-                        )
+                        ),
                     )}
                 </nav>
 
@@ -86,7 +86,7 @@ const Header = () => {
                                     <Link key={e.item} className="header_link" to={e.path} onClick={() => setIsOpen(false)}>
                                         {e.item}
                                     </Link>
-                                )
+                                ),
                             )}
                         </nav>
                     </div>
